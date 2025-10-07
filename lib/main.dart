@@ -12,19 +12,19 @@ class Recipe {
 
 const recipes = <Recipe>[
   Recipe(
-    'Spaghetti Aglio e Olio',
-    ['Spaghetti', 'Garlic', 'Olive oil', 'Red pepper flakes', 'Parsley', 'Salt'],
-    ['Boil spaghetti', 'Sauté garlic in oil', 'Add flakes + pasta', 'Season, add parsley'],
+    'Spaghetti',
+    ['Spaghetti','Salt', 'Seasonings'],
+    ['Boil spaghetti', 'salt water', 'Add seasonings', 'plate'],
   ),
   Recipe(
     'Chicken Tacos',
-    ['Chicken', 'Taco shells', 'Onion', 'Cilantro', 'Lime', 'Salt'],
-    ['Cook chicken', 'Warm shells', 'Assemble with onion & cilantro', 'Squeeze lime, serve'],
+    ['Chicken', 'Taco shells', 'Salsa', 'Sour cream'],
+    ['Cook chicken', 'Warm shells', 'Assemble with toppings', 'serve'],
   ),
   Recipe(
     'Pancakes',
     ['Flour', 'Milk', 'Eggs', 'Sugar', 'Baking powder', 'Butter', 'Salt'],
-    ['Mix dry + wet', 'Pour on griddle', 'Flip when bubbly', 'Serve warm'],
+    ['Mix dry + wet', 'Pour on pan', 'Flip', 'serve'],
   ),
 ];
 
@@ -56,7 +56,8 @@ class HomeScreen extends StatelessWidget {
             trailing: const Icon(Icons.chevron_right),
             onTap: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => DetailsScreen(recipe: r)),
+              //adv
+              //MaterialPageRoute(builder: (_) => DetailsScreen(recipe: r)),
             ),
           );
         },
